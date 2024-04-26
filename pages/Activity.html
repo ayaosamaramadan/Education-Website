@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Activity.css" />
+    <title>Activity</title>
+  </head>
+  <body>
+    <header class="h">
+      <a href="#" class="logo">EDUCATION</a>
+      <nav class="navigation">
+        <a href="../Home.html">Home</a>
+
+        <a href="Course.html">Courses</a>
+        <a href="About.html">About Us</a>
+      </nav>
+    </header>
+
+    <div class="crud">
+      <div class="head">
+        <h2 style="margin-left: 35%; font-size: 40px; color: #ffffff">
+          Students Activity Form
+        </h2>
+      </div>
+
+      <div>
+        <input
+          class="inputs"
+          type="text"
+          id="name"
+          placeholder="   NAME"
+          style="margin-left: 25%"
+        />
+        <input class="inputs" type="number" id="id" placeholder="     ID" />
+        <input
+          class="inputs"
+          type="number"
+          id="year"
+          placeholder="    YEAR"
+          style="margin-left: 25%"
+        />
+        <input
+          class="inputs"
+          type="email"
+          id="email"
+          placeholder="    EMAIL "
+        />
+        <br />
+        <button class="btn" id="submit" type="submit">CREATE</button>
+      </div>
+      <br />
+      <br />
+      <div class="outputs">
+        <div id="seabtn">
+          <input
+            onkeyup="searchData(this.value)"
+            class="input"
+            id="search"
+            type="search"
+            placeholder="    SEARCH"
+            style="width: 40%; margin-left: 27.4%; padding: -10px"
+          />
+          <br />
+          <button
+            onclick="getsearchMood(this.id)"
+            class="btn1"
+            id="seaname"
+            style="margin-left: 31%"
+          >
+            SEARCH BY NAME
+          </button>
+          <button onclick="getsearchMood(this.id)" class="btn1" id="seaid">
+            SEARCH BY ID</button
+          ><br />
+        </div>
+        <br />
+        <div id="deleteAll"></div>
+        <br />
+        <table>
+          <tr class="tab">
+            <th>&nbsp;S.L</th>
+            <th>&nbsp;&nbsp;&nbsp;NAME</th>
+            <th>&nbsp;&nbsp;&nbsp; ID&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;YEAR&nbsp;</th>
+            <th>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </th>
+            <th>&nbsp;&nbsp;&nbsp;UPDATE&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;DELETE&nbsp;</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="Activity.js"></script>
+  </body>
+</html>

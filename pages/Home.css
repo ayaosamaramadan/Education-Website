@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(10deg, #8e44ad, #2980b9);
+  height: 97.9vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.705)),
+    url("./imgs/msg1660826174-3143.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.main {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.main content {
+  max-width: 60rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+}
+.main .content h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  justify-content: center;
+}
+
+.main .content p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1;
+  color: #fff;
+  padding: 6px 10px;
+}
+.e {
+  justify-content: center;
+  padding: 0 0 0 310px;
+}
+
+a {
+  color: #252121;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header nav {
+  margin: 0;
+  color: #fff;
+  width: 60%;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px;
+}
+header nav a {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+.h {
+  background-image: linear-gradient(to right, rgb(59, 59, 134), #3b3b3bdd);
+  border-radius: 20px;
+  color: #ffffff;
+  border-color: #000;
+}
+.btn {
+  background-color: #2691d9;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 50px;
+  width: 20%;
+  border: 0px solid;
+  font-size: 17px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #2691d9;
+  background-color: #acacac;
+}
+.i {
+  margin-left: 42%;
+}
